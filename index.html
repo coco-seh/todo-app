@@ -7,7 +7,14 @@
     <title>My tasks</title>
 
     <!-- 폰트어썸 -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous"/>
+
+    <!-- 스타일시트 -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- 스크립트 -->
+    <script defer src="./js/date.js"></script>
+    <script defer src="./js/main.js"></script>
 </head>
 <body>
 
@@ -24,11 +31,22 @@
             </div>
 
             <div class="plus-btn">
-                <i class="fas fa-plus"></i>
+                <i class="fas fa-plus plusbtn"></i>
             </div>
         </div>
 
-        <div class="todo-box">
+        <div class="todo-list">
+            <div class="todo-box">
+                <div class="todos">
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12.297" height="9.549" viewBox="0 0 12.297 9.549">
+                            <path id="check" d="M4.709,9.771a.628.628,0,0,1-.888,0L.276,6.225a.941.941,0,0,1,0-1.332L.72,4.449a.942.942,0,0,1,1.332,0L4.265,6.663,10.246.682a.942.942,0,0,1,1.332,0l.444.444a.941.941,0,0,1,0,1.332Zm0,0" transform="translate(0 -0.406)" fill="#0779e4"/>
+                          </svg>
+                    </div>
+                    <div contenteditable="true" class="todo">편집가능</div>
+                </div>
+                <div class="delete-btn"><img src="./assets/delete.svg" alt=""></div>
+            </div>
             
         </div>
     </div>
